@@ -10,6 +10,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Roboto-ThinItalic';
+    src: local('Roboto'), url('../fonts/Roboto/Roboto-ThinItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .container-header {
     background-color: #1F2937;
     align-items: center;
@@ -93,11 +100,167 @@ button {
     object-fit: cover;
 }
 
-footer {
+.random-info{
+    padding: 40px;
+    margin: auto;
+}
+
+.random-info h2{
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-weight: 900px;
+    color: #1F2937;
+    text-align: center;
+}
+
+.info-images{
     display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    padding: 20px; 
+
+}
+.image-block {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.image-block img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #3882F6;
+    border-radius: 10px;
+}
+
+.image-block p {
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: #1F2937;
+    text-align: center; 
+    margin: 0;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
     align-items: center;
+    justify-content: center;
+    padding: 100px;
+    text-align: center;
+}
+
+.text{
+    max-width: 600px;
+    font-family: 'Roboto-ThinItalic';
+    font-size: 36px;
+    color: #1F2937;
+    margin-bottom: 20px;
+}
+
+.author{
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 900;
+    align-self: flex-end;
+    margin-right: 10%;
+}
+
+.signup{
+    padding: 80px;
+}
+
+.signup-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3882F6;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 35px 45px 35px 45px;
+}
+
+.signup-text{
+    max-width: 60%;
+}
+
+.signup-text h{
+    font-family: 'Roboto';
+    color: #F9FAF8;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.signup-text p{
+    font-family: 'Roboto';
+    color: #E5E7EB;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.signup-button{
+    display: flex;
+    justify-content: center; 
+    padding: 20px 40px;
+    align-items: center;
+}
+
+.signup-button button {
+    border: 2px solid #FFFFFF; 
+    background-color: transparent; 
+    color: #FFFFFF; 
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    width: auto; 
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0 20px; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.signup-button button:hover {
+    background-color: #FFFFFF; 
+    color: #3882F6; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: block;
+    text-align: center;
+    background-color: #1F2937;
+    padding: 30px;
+}
+
+.footer-text{
     font-family: 'Roboto';
     font-size: 24px;
     color: #E5E7EB;
-    background-color: #1F2937;
+}
+
+.footer-text p:hover {
+    color: #3882F6; 
 }
